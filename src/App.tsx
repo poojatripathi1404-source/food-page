@@ -12,6 +12,8 @@ import { BlogDetailPage } from './pages/BlogDetailPage';
 import { RecipesIndexPage } from './pages/RecipesIndexPage';
 import { BookmarksPage } from './pages/BookmarksPage';
 import { AboutPage } from './pages/AboutPage';
+import { HeritagePage } from './pages/HeritagePage';
+import { TechniquesPage } from './pages/TechniquesPage';
 
 function AppContent() {
   const { route } = useRouter();
@@ -24,6 +26,12 @@ function AppContent() {
       break;
     case 'recipes':
       content = <RecipesIndexPage />;
+      break;
+    case 'heritage':
+      content = <HeritagePage />;
+      break;
+    case 'techniques':
+      content = <TechniquesPage />;
       break;
     case 'bookmarks':
       content = <BookmarksPage />;

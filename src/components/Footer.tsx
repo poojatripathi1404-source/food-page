@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
               {BLOG_POSTS.slice(0, 5).map((post) => (
                 <li key={post.slug}>
                   <Link
-                    to={`/blog/${post.slug}`}
+                    to={post.customPath || `/recipes/${post.slug}`}
                     className="hover:text-stone-100 transition-colors block truncate"
                   >
                     {post.title}
@@ -43,27 +43,32 @@ export const Footer: React.FC = () => {
           {/* Navigation & Archives */}
           <div>
             <h4 className="text-xs uppercase tracking-widest text-stone-400 font-semibold mb-4">
-              Explore The Journal
+              Explore The Site
             </h4>
             <ul className="space-y-2.5 text-xs text-stone-400">
               <li>
                 <Link to="/" className="hover:text-stone-100 transition-colors">
-                  Front Page & Editorial Lead
+                  Home & Daily Kitchen Lead
                 </Link>
               </li>
               <li>
                 <Link to="/recipes" className="hover:text-stone-100 transition-colors">
-                  Complete 10-Article Recipe Index
+                  All Tested Recipes & Dinner Ideas
                 </Link>
               </li>
               <li>
-                <Link to="/bookmarks" className="hover:text-stone-100 transition-colors">
-                  Saved Reading List
+                <Link to="/heritage" className="hover:text-stone-100 transition-colors">
+                  Culinary Heritage & Food Traditions
+                </Link>
+              </li>
+              <li>
+                <Link to="/techniques" className="hover:text-stone-100 transition-colors">
+                  Masterclass Cooking Techniques
                 </Link>
               </li>
               <li>
                 <Link to="/about" className="hover:text-stone-100 transition-colors">
-                  Curatorial Editorial Philosophy
+                  Test Kitchen Philosophy
                 </Link>
               </li>
             </ul>

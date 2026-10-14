@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback, createContext, useContext } from 'rea
 
 export interface RouteMatch {
   pathname: string;
-  route: 'home' | 'blog-detail' | 'recipes' | 'about' | 'bookmarks' | 'category';
+  route: 'home' | 'blog-detail' | 'recipes' | 'heritage' | 'techniques' | 'about' | 'bookmarks' | 'category';
   params: Record<string, string>;
 }
 
@@ -55,6 +55,24 @@ export function parseCurrentRoute(): RouteMatch {
     return {
       pathname,
       route: 'recipes',
+      params: {},
+    };
+  }
+
+  // Match /heritage
+  if (pathname === '/heritage' || pathname === '/heritage/' || pathname.startsWith('/heritage')) {
+    return {
+      pathname,
+      route: 'heritage',
+      params: {},
+    };
+  }
+
+  // Match /techniques
+  if (pathname === '/techniques' || pathname === '/techniques/' || pathname.startsWith('/techniques')) {
+    return {
+      pathname,
+      route: 'techniques',
       params: {},
     };
   }
@@ -142,6 +160,12 @@ export function RouterProvider({ children }: { children: React.ReactNode }) {
     } else if (route.route === 'recipes') {
       pageTitle = 'All Tested Homemade Recipes & Dinner Ideas | My Food Site';
       metaDesc = 'Browse our complete catalog of quick breakfast ideas, healthy weeknight dinners, and vegetarian curries with step-by-step masterclass instructions!';
+    } else if (route.route === 'heritage') {
+      pageTitle = 'Culinary Heritage & Food Traditions | My Food Site';
+      metaDesc = 'Discover the rich cultural background, history, and ancient traditions behind world-famous dishes. Read our tested chef stories and culinary heritage guides now!';
+    } else if (route.route === 'techniques') {
+      pageTitle = 'Master Cooking Techniques & Kitchen Methods | My Food Site';
+      metaDesc = 'Master essential culinary techniques with step-by-step guidance, temperature targets, and chef methods for every recipe. Elevate your home cooking skills today!';
     } else if (route.route === 'about') {
       pageTitle = 'About Our Test Kitchen & Editorial Craft | My Food Site';
       metaDesc = 'Learn about our rigorous test kitchen standards, chef instructors, and dedication to accessible, healthy homemade food ideas for home cooks.';

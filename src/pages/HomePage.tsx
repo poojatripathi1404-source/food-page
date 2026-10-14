@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { BLOG_POSTS } from '../data/blogPosts';
 import { Link } from '../router/Link';
 import { ImageWithFallback } from '../components/ImageWithFallback';
-import { Search, Clock, ArrowRight, Bookmark, ChefHat, Sparkles, Check } from 'lucide-react';
+import { Search, Clock, ArrowRight, Bookmark, ChefHat, Sparkles, Check, Globe } from 'lucide-react';
 import { BlogPost } from '../types';
 
 export const HomePage: React.FC = () => {
@@ -167,9 +167,92 @@ export const HomePage: React.FC = () => {
             )}
           </div>
         ) : (
-          /* Default Front-Page Editorial Broadsheet 3-Tier Layout */
+          /* Default Front-Page Welcome Landing Page */
           <>
-            {/* FEATURED SEO RECIPES SECTION: 3 Primary Recipes with clean lowercase URLs */}
+            {/* Site Overview & Navigation Hub to Rest of Site */}
+            <section className="bg-white border border-stone-200 rounded-2xl p-8 sm:p-10 shadow-2xs">
+              <div className="text-center max-w-2xl mx-auto mb-8">
+                <span className="text-xs uppercase tracking-widest text-stone-500 font-mono">
+                  Welcome to L’Atelier Gourmand
+                </span>
+                <h2 className="text-2xl sm:text-3xl font-serif font-medium text-stone-900 mt-1">
+                  Everything You Need to Cook with Confidence
+                </h2>
+                <p className="text-sm text-stone-600 mt-2 leading-relaxed">
+                  Explore our comprehensive culinary destination—from tested weeknight recipes and cultural food origins to masterclass cooking techniques and kitchen science.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {/* Navigation Card 1: Recipes */}
+                <div className="p-6 bg-[#FAF8F5] rounded-xl border border-stone-200/80 flex flex-col justify-between space-y-4">
+                  <div className="space-y-2">
+                    <div className="w-10 h-10 rounded-lg bg-stone-900 text-stone-100 flex items-center justify-center">
+                      <ChefHat className="w-5 h-5" />
+                    </div>
+                    <h3 className="text-lg font-serif font-medium text-stone-900">
+                      Tested Recipe Index
+                    </h3>
+                    <p className="text-xs text-stone-600 leading-relaxed">
+                      Browse our complete catalog of quick breakfast ideas, high-protein weeknight chicken dinners, and creamy vegetarian curries with pantry staples.
+                    </p>
+                  </div>
+                  <Link
+                    to="/recipes"
+                    className="text-xs font-semibold text-stone-900 hover:text-stone-700 flex items-center gap-1 underline underline-offset-4"
+                  >
+                    <span>Explore all tested homemade recipes</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
+
+                {/* Navigation Card 2: Heritage */}
+                <div className="p-6 bg-[#FAF8F5] rounded-xl border border-stone-200/80 flex flex-col justify-between space-y-4">
+                  <div className="space-y-2">
+                    <div className="w-10 h-10 rounded-lg bg-amber-800 text-stone-100 flex items-center justify-center">
+                      <Globe className="w-5 h-5" />
+                    </div>
+                    <h3 className="text-lg font-serif font-medium text-stone-900">
+                      Cultural Heritage & Origins
+                    </h3>
+                    <p className="text-xs text-stone-600 leading-relaxed">
+                      Immerse yourself in deep food storytelling tracing ancient French egg disciplines, Mediterranean herb roasting, and Ayurvedic spice traditions.
+                    </p>
+                  </div>
+                  <Link
+                    to="/heritage"
+                    className="text-xs font-semibold text-stone-900 hover:text-stone-700 flex items-center gap-1 underline underline-offset-4"
+                  >
+                    <span>Read our food heritage stories</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
+
+                {/* Navigation Card 3: Techniques */}
+                <div className="p-6 bg-[#FAF8F5] rounded-xl border border-stone-200/80 flex flex-col justify-between space-y-4">
+                  <div className="space-y-2">
+                    <div className="w-10 h-10 rounded-lg bg-emerald-800 text-stone-100 flex items-center justify-center">
+                      <Sparkles className="w-5 h-5" />
+                    </div>
+                    <h3 className="text-lg font-serif font-medium text-stone-900">
+                      Masterclass Cooking Techniques
+                    </h3>
+                    <p className="text-xs text-stone-600 leading-relaxed">
+                      Master at least 2 distinct techniques for every dish, including kinetic fork aeration, sear-to-rest thermal timing, and whole spice lipid blooming.
+                    </p>
+                  </div>
+                  <Link
+                    to="/techniques"
+                    className="text-xs font-semibold text-stone-900 hover:text-stone-700 flex items-center gap-1 underline underline-offset-4"
+                  >
+                    <span>Master our cooking techniques</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </Link>
+                </div>
+              </div>
+            </section>
+
+            {/* FEATURED QUICK RECIPES SECTION: Clean lowercase URLs with Unsplash Photos */}
             <section className="border-b border-stone-200 pb-12">
               <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
                 <div>
@@ -188,8 +271,8 @@ export const HomePage: React.FC = () => {
                 </Link>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {BLOG_POSTS.slice(0, 3).map((post) => (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {BLOG_POSTS.slice(0, 4).map((post) => (
                   <article
                     key={post.slug}
                     className="group flex flex-col justify-between bg-white rounded-xl border border-stone-200/90 overflow-hidden shadow-2xs hover:shadow-sm transition-all"
@@ -205,8 +288,8 @@ export const HomePage: React.FC = () => {
                         />
                       </Link>
 
-                      <div className="p-5 space-y-2.5">
-                        <div className="flex items-center gap-1.5 text-xs text-stone-500">
+                      <div className="p-4 space-y-2">
+                        <div className="flex items-center gap-1.5 text-[11px] text-stone-500">
                           <span>{post.category}</span>
                           <span aria-hidden="true">·</span>
                           <span>{post.prepTime} prep</span>
@@ -215,7 +298,7 @@ export const HomePage: React.FC = () => {
                         </div>
 
                         <Link to={post.customPath || `/recipes/${post.slug}`} className="block">
-                          <h3 className="font-serif text-xl font-medium text-stone-900 leading-snug group-hover:text-stone-700 transition-colors">
+                          <h3 className="font-serif text-base sm:text-lg font-medium text-stone-900 leading-snug group-hover:text-stone-700 transition-colors">
                             {post.title}
                           </h3>
                         </Link>
@@ -226,15 +309,15 @@ export const HomePage: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="p-5 pt-3 border-t border-stone-100 flex items-center justify-between text-xs">
-                      <span className="font-mono text-stone-400 text-[11px] truncate max-w-[170px]">
+                    <div className="p-4 pt-3 border-t border-stone-100 flex items-center justify-between text-xs">
+                      <span className="font-mono text-stone-400 text-[10px] truncate max-w-[130px]">
                         {post.customPath || `/recipes/${post.slug}`}
                       </span>
                       <Link
                         to={post.customPath || `/recipes/${post.slug}`}
                         className="font-semibold text-stone-900 hover:text-stone-600 flex items-center gap-1 group-hover:translate-x-0.5 transition-transform"
                       >
-                        <span>View Recipe</span>
+                        <span>View</span>
                         <ArrowRight className="w-3.5 h-3.5" />
                       </Link>
                     </div>

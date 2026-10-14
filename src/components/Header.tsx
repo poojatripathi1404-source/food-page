@@ -29,8 +29,8 @@ export const Header: React.FC = () => {
   const navLinks = [
     { label: 'Journal', path: '/' },
     { label: 'All Recipes', path: '/recipes' },
-    { label: 'Techniques', path: '/category/Artisan%20Baking' },
-    { label: 'Heritage', path: '/category/Heritage%20Broths' },
+    { label: 'Heritage', path: '/heritage' },
+    { label: 'Techniques', path: '/techniques' },
     { label: 'Philosophy', path: '/about' },
   ];
 

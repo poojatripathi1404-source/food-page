@@ -63,6 +63,8 @@
           <nav class="flex items-center gap-6 text-sm">
             <a href="/" class="font-semibold text-stone-900">Home</a>
             <a href="/recipes" class="text-stone-600 hover:text-stone-900">All Recipes</a>
+            <a href="/heritage" class="text-stone-600 hover:text-stone-900">Heritage</a>
+            <a href="/techniques" class="text-stone-600 hover:text-stone-900">Techniques</a>
             <a href="/about" class="text-stone-600 hover:text-stone-900">Philosophy</a>
           </nav>
         </header>
@@ -79,10 +81,36 @@
             </p>
           </div>
 
-          <!-- Featured 3 Recipes Grid with Alt Texts -->
+          <!-- Site Overview & Navigation Hub -->
+          <section class="py-8 border-b border-stone-200">
+            <div class="text-center max-w-2xl mx-auto mb-6">
+              <span class="text-xs uppercase tracking-widest text-stone-500 font-mono">Welcome to L’Atelier Gourmand</span>
+              <h2 class="text-2xl font-serif font-medium text-stone-900 mt-1">Everything You Need to Cook with Confidence</h2>
+              <p class="text-sm text-stone-600 mt-1">Explore our four pillars: Tested Recipes, Cultural Heritage, Masterclass Techniques, and Editorial Craft.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div class="p-5 bg-white border border-stone-200 rounded-xl">
+                <h3 class="font-serif text-lg font-medium text-stone-900">Tested Recipe Index</h3>
+                <p class="text-xs text-stone-600 mt-1">Browse our complete collection of fast weeknight meals and breakfast formulas.</p>
+                <a href="/recipes" class="mt-3 inline-block text-xs font-semibold text-stone-900 underline">Explore our complete collection of easy homemade dinner recipes →</a>
+              </div>
+              <div class="p-5 bg-white border border-stone-200 rounded-xl">
+                <h3 class="font-serif text-lg font-medium text-stone-900">Cultural Food Heritage</h3>
+                <p class="text-xs text-stone-600 mt-1">Discover the 4-5 paragraph cultural history, ancient traditions, and deep food stories behind each dish.</p>
+                <a href="/heritage" class="mt-3 inline-block text-xs font-semibold text-stone-900 underline">Read our food heritage stories and cultural background →</a>
+              </div>
+              <div class="p-5 bg-white border border-stone-200 rounded-xl">
+                <h3 class="font-serif text-lg font-medium text-stone-900">Masterclass Cooking Techniques</h3>
+                <p class="text-xs text-stone-600 mt-1">Master at least 2 distinct cooking techniques for each recipe with step-by-step guidance.</p>
+                <a href="/techniques" class="mt-3 inline-block text-xs font-semibold text-stone-900 underline">Master essential cooking techniques with step-by-step guidance →</a>
+              </div>
+            </div>
+          </section>
+
+          <!-- Featured 4 Recipes Grid with Alt Texts -->
           <section class="py-10 border-b border-stone-200">
             <h2 class="text-2xl font-serif font-medium text-stone-900 mb-6">Featured Quick Recipes & Dinner Ideas</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               
               <!-- Recipe 1 -->
               <article class="bg-white rounded-xl border border-stone-200 overflow-hidden shadow-2xs">
@@ -97,14 +125,14 @@
                     height="500"
                   />
                 </a>
-                <div class="p-5">
-                  <div class="text-xs text-stone-500 mb-1">Breakfast Ideas · 5 min prep · 5 min cook</div>
-                  <h3 class="font-serif text-xl font-medium text-stone-900">
+                <div class="p-4">
+                  <div class="text-[11px] text-stone-500 mb-1">Breakfast Ideas · 5 min prep · 5 min cook</div>
+                  <h3 class="font-serif text-lg font-medium text-stone-900">
                     <a href="/recipes/fluffy-cheese-omelette">Fluffy Cheese Omelette Recipe</a>
                   </h3>
-                  <p class="text-xs text-stone-600 mt-1">A fluffy cheese omelette requires no cream—only 60 seconds of vigorous whisking, foaming butter, and gentle heat control to lock in a molten center.</p>
-                  <div class="mt-4 pt-3 border-t border-stone-100 flex justify-between text-xs">
-                    <span class="font-mono text-stone-400">/recipes/fluffy-cheese-omelette</span>
+                  <p class="text-xs text-stone-600 mt-1 line-clamp-2">A fluffy cheese omelette requires no cream—only 60 seconds of vigorous whisking, foaming butter, and gentle heat control to lock in a molten center.</p>
+                  <div class="mt-3 pt-2 border-t border-stone-100 flex justify-between text-xs">
+                    <span class="font-mono text-stone-400 text-[10px]">/recipes/fluffy-cheese-omelette</span>
                     <a href="/recipes/fluffy-cheese-omelette" class="font-semibold text-stone-900 hover:underline">Read Recipe →</a>
                   </div>
                 </div>
@@ -123,14 +151,14 @@
                     height="500"
                   />
                 </a>
-                <div class="p-5">
-                  <div class="text-xs text-stone-500 mb-1">Dinner Ideas · 10 min prep · 15 min cook</div>
-                  <h3 class="font-serif text-xl font-medium text-stone-900">
+                <div class="p-4">
+                  <div class="text-[11px] text-stone-500 mb-1">Dinner Ideas · 10 min prep · 15 min cook</div>
+                  <h3 class="font-serif text-lg font-medium text-stone-900">
                     <a href="/recipes/healthy-chicken-dinner">Healthy Chicken Recipe for Dinner</a>
                   </h3>
-                  <p class="text-xs text-stone-600 mt-1">A healthy weeknight chicken dinner that stays remarkably juicy: even-thickness breast fillets, a brief dry brine, and pan searing with fresh aromatics.</p>
-                  <div class="mt-4 pt-3 border-t border-stone-100 flex justify-between text-xs">
-                    <span class="font-mono text-stone-400">/recipes/healthy-chicken-dinner</span>
+                  <p class="text-xs text-stone-600 mt-1 line-clamp-2">A healthy weeknight chicken dinner that stays remarkably juicy: even-thickness breast fillets, a brief dry brine, and pan searing with fresh aromatics.</p>
+                  <div class="mt-3 pt-2 border-t border-stone-100 flex justify-between text-xs">
+                    <span class="font-mono text-stone-400 text-[10px]">/recipes/healthy-chicken-dinner</span>
                     <a href="/recipes/healthy-chicken-dinner" class="font-semibold text-stone-900 hover:underline">Read Recipe →</a>
                   </div>
                 </div>
@@ -149,15 +177,41 @@
                     height="500"
                   />
                 </a>
-                <div class="p-5">
-                  <div class="text-xs text-stone-500 mb-1">Vegetarian Meals · 10 min prep · 18 min cook</div>
-                  <h3 class="font-serif text-xl font-medium text-stone-900">
+                <div class="p-4">
+                  <div class="text-[11px] text-stone-500 mb-1">Vegetarian Meals · 10 min prep · 18 min cook</div>
+                  <h3 class="font-serif text-lg font-medium text-stone-900">
                     <a href="/recipes/vegetarian-curry">Vegetarian Curry Recipe</a>
                   </h3>
-                  <p class="text-xs text-stone-600 mt-1">An aromatic 25-minute vegetarian curry crafted from whole spices bloomed in coconut oil, simmered with chickpeas and sweet coconut milk.</p>
-                  <div class="mt-4 pt-3 border-t border-stone-100 flex justify-between text-xs">
-                    <span class="font-mono text-stone-400">/recipes/vegetarian-curry</span>
+                  <p class="text-xs text-stone-600 mt-1 line-clamp-2">An aromatic 25-minute vegetarian curry crafted from whole spices bloomed in coconut oil, simmered with chickpeas and sweet coconut milk.</p>
+                  <div class="mt-3 pt-2 border-t border-stone-100 flex justify-between text-xs">
+                    <span class="font-mono text-stone-400 text-[10px]">/recipes/vegetarian-curry</span>
                     <a href="/recipes/vegetarian-curry" class="font-semibold text-stone-900 hover:underline">Read Recipe →</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Recipe 4 -->
+              <article class="bg-white rounded-xl border border-stone-200 overflow-hidden shadow-2xs">
+                <a href="/recipes/fluffy-buttermilk-pancakes">
+                  <img
+                    src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800&q=80"
+                    alt="Tall stack of golden fluffy buttermilk pancakes with melting butter and pure maple syrup"
+                    class="w-full aspect-16/10 object-cover"
+                    loading="lazy"
+                    decoding="async"
+                    width="800"
+                    height="500"
+                  />
+                </a>
+                <div class="p-4">
+                  <div class="text-[11px] text-stone-500 mb-1">Breakfast Ideas · 8 min prep · 10 min cook</div>
+                  <h3 class="font-serif text-lg font-medium text-stone-900">
+                    <a href="/recipes/fluffy-buttermilk-pancakes">Fluffy Buttermilk Pancakes Recipe</a>
+                  </h3>
+                  <p class="text-xs text-stone-600 mt-1 line-clamp-2">Learn how to cook tall, golden, and ultra-fluffy buttermilk pancakes in 15 minutes with tested batter science and gentle folding.</p>
+                  <div class="mt-3 pt-2 border-t border-stone-100 flex justify-between text-xs">
+                    <span class="font-mono text-stone-400 text-[10px]">/recipes/fluffy-buttermilk-pancakes</span>
+                    <a href="/recipes/fluffy-buttermilk-pancakes" class="font-semibold text-stone-900 hover:underline">Read Recipe →</a>
                   </div>
                 </div>
               </article>
