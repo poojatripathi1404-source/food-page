@@ -73,11 +73,12 @@ export const HomePage: React.FC = () => {
         </div>
 
         <div className="py-8 sm:py-10">
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-serif font-medium tracking-tight text-stone-900 uppercase">
-            L’Atelier Gourmand
+          <div className="text-xs uppercase tracking-widest text-stone-500 font-mono mb-2">My Food Site · Daily Tested Kitchen Formulas</div>
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-medium tracking-tight text-stone-900 leading-tight">
+            Easy Homemade Recipes & Quick Food Ideas for Every Kitchen
           </h1>
           <p className="mt-3 text-sm sm:text-base text-stone-600 max-w-2xl mx-auto font-serif italic">
-            A curatorial journal exploring the chemistry of bread, ancient broths, coastal craft, and the timeless art of the communal table.
+            Discover easy homemade recipes and fast weeknight dinner ideas. Learn step-by-step cooking techniques with pantry ingredients.
           </p>
         </div>
 
@@ -168,109 +169,134 @@ export const HomePage: React.FC = () => {
         ) : (
           /* Default Front-Page Editorial Broadsheet 3-Tier Layout */
           <>
-            {/* TIER 1: Lead Story (Dominant Editorial Focal Anchor) */}
+            {/* FEATURED SEO RECIPES SECTION: 3 Primary Recipes with clean lowercase URLs */}
             <section className="border-b border-stone-200 pb-12">
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-                
-                {/* Lead Image (7 cols) */}
-                <div className="lg:col-span-7">
-                  <Link to={`/blog/${leadStory.slug}`} className="group block h-full">
-                    <div className="relative h-72 sm:h-96 lg:h-full min-h-[340px] rounded-xl overflow-hidden border border-stone-200 shadow-xs">
-                      <ImageWithFallback
-                        src={leadStory.heroImage}
-                        alt={leadStory.title}
-                        fallbackTitle={leadStory.title}
-                        className="group-hover:scale-103 transition-transform duration-700 object-cover"
-                        containerClassName="h-full w-full"
-                      />
-                      <div className="absolute top-4 left-4 bg-stone-900/90 text-stone-100 text-[11px] font-mono uppercase tracking-wider px-2.5 py-1 rounded backdrop-blur-xs">
-                        Lead Editorial Story
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-
-                {/* Lead Headline & Curatorial Deck (5 cols) */}
-                <div className="lg:col-span-5 flex flex-col justify-between py-2">
-                  <div className="space-y-4">
-                    {/* Unboxed clean metadata with typographic separators (anti-slop) */}
-                    <div className="flex items-center gap-2 text-xs text-stone-500 font-sans">
-                      <span>{leadStory.category}</span>
-                      <span aria-hidden="true">·</span>
-                      <span>{leadStory.publishedDate}</span>
-                      <span aria-hidden="true">·</span>
-                      <span>{leadStory.readTimeMinutes} min read</span>
-                    </div>
-
-                    <Link to={`/blog/${leadStory.slug}`} className="group block">
-                      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-medium text-stone-900 leading-tight group-hover:text-stone-700 transition-colors">
-                        {leadStory.title}
-                      </h2>
-                    </Link>
-
-                    <p className="text-sm sm:text-base text-stone-600 leading-relaxed font-serif italic">
-                      "{leadStory.subtitle}"
-                    </p>
-
-                    <p className="text-sm text-stone-700 leading-relaxed">
-                      {leadStory.summary}
-                    </p>
-
-                    <div className="pt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-stone-500 font-mono">
-                      <span>Origin: {leadStory.origin}</span>
-                      <span>·</span>
-                      <span>Difficulty: {leadStory.difficulty}</span>
-                    </div>
-                  </div>
-
-                  <div className="pt-6 border-t border-stone-200 mt-6 flex items-center justify-between">
-                    <Link
-                      to={`/blog/${leadStory.slug}`}
-                      className="inline-flex items-center gap-2 text-sm font-semibold text-stone-900 hover:text-stone-700 group"
-                    >
-                      <span>Read Full Masterclass</span>
-                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </Link>
-
-                    <button
-                      onClick={(e) => toggleBookmark(e, leadStory.slug)}
-                      className="p-2 text-stone-500 hover:text-stone-900 rounded-lg hover:bg-stone-100 transition-colors"
-                      title="Save article"
-                      aria-label="Save lead story"
-                    >
-                      <Bookmark className={`w-5 h-5 ${savedSlugs.includes(leadStory.slug) ? 'fill-stone-900 text-stone-900' : ''}`} />
-                    </button>
-                  </div>
-                </div>
-
-              </div>
-            </section>
-
-            {/* TIER 2: Secondary Features (3 Structured Cards) */}
-            <section className="border-b border-stone-200 pb-12">
-              <div className="flex items-center justify-between mb-8">
+              <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
                 <div>
-                  <h3 className="text-2xl font-serif font-medium text-stone-900">
-                    The Culinary Monograph Series
-                  </h3>
-                  <p className="text-xs text-stone-500 mt-1">
-                    Broth alchemy, ancient Mexican mole traditions, and French levain architecture
-                  </p>
+                  <span className="text-xs uppercase tracking-widest text-stone-500 font-mono">
+                    Essential Kitchen Catalog
+                  </span>
+                  <h2 className="text-2xl sm:text-3xl font-serif font-medium text-stone-900 mt-1">
+                    Featured Quick Recipes & Dinner Ideas
+                  </h2>
                 </div>
-                <Link to="/recipes" className="text-xs font-semibold text-stone-800 hover:underline">
-                  View All 10 Recipes →
+                <Link
+                  to="/recipes"
+                  className="text-xs font-semibold text-stone-800 hover:text-stone-950 underline underline-offset-4"
+                >
+                  Explore our complete collection of easy homemade dinner recipes →
                 </Link>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {secondaryStories.map((post) => (
-                  <PostCard
+                {BLOG_POSTS.slice(0, 3).map((post) => (
+                  <article
                     key={post.slug}
-                    post={post}
-                    isSaved={savedSlugs.includes(post.slug)}
-                    onToggleBookmark={(e) => toggleBookmark(e, post.slug)}
-                  />
+                    className="group flex flex-col justify-between bg-white rounded-xl border border-stone-200/90 overflow-hidden shadow-2xs hover:shadow-sm transition-all"
+                  >
+                    <div>
+                      <Link to={post.customPath || `/recipes/${post.slug}`} className="block relative aspect-16/10 overflow-hidden bg-stone-100">
+                        <ImageWithFallback
+                          src={post.heroImage}
+                          alt={post.imageAlt || post.title}
+                          fallbackTitle={post.title}
+                          className="group-hover:scale-104 transition-transform duration-500 object-cover"
+                          containerClassName="w-full h-full"
+                        />
+                      </Link>
+
+                      <div className="p-5 space-y-2.5">
+                        <div className="flex items-center gap-1.5 text-xs text-stone-500">
+                          <span>{post.category}</span>
+                          <span aria-hidden="true">·</span>
+                          <span>{post.prepTime} prep</span>
+                          <span aria-hidden="true">·</span>
+                          <span>{post.cookTime} cook</span>
+                        </div>
+
+                        <Link to={post.customPath || `/recipes/${post.slug}`} className="block">
+                          <h3 className="font-serif text-xl font-medium text-stone-900 leading-snug group-hover:text-stone-700 transition-colors">
+                            {post.title}
+                          </h3>
+                        </Link>
+
+                        <p className="text-xs text-stone-600 line-clamp-2 leading-relaxed">
+                          {post.summary}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="p-5 pt-3 border-t border-stone-100 flex items-center justify-between text-xs">
+                      <span className="font-mono text-stone-400 text-[11px] truncate max-w-[170px]">
+                        {post.customPath || `/recipes/${post.slug}`}
+                      </span>
+                      <Link
+                        to={post.customPath || `/recipes/${post.slug}`}
+                        className="font-semibold text-stone-900 hover:text-stone-600 flex items-center gap-1 group-hover:translate-x-0.5 transition-transform"
+                      >
+                        <span>View Recipe</span>
+                        <ArrowRight className="w-3.5 h-3.5" />
+                      </Link>
+                    </div>
+                  </article>
                 ))}
+              </div>
+            </section>
+
+            {/* AEO (Answer Engine Optimization) Direct Questions & Answer-First Section */}
+            <section className="bg-white border border-stone-200 rounded-2xl p-8 sm:p-10 shadow-2xs">
+              <div className="max-w-3xl">
+                <span className="text-xs uppercase tracking-widest text-stone-500 font-mono">
+                  Kitchen FAQ & Culinary Guidance
+                </span>
+                <div className="mt-6 space-y-8">
+                  {/* Direct Question H2 #1 */}
+                  <div className="border-b border-stone-100 pb-6">
+                    <h2 className="text-xl sm:text-2xl font-serif font-medium text-stone-900">
+                      What makes a quick homemade meal both nutritious and easy to prepare?
+                    </h2>
+                    {/* Answer-first 1-2 sentence paragraph */}
+                    <p className="text-stone-700 text-sm sm:text-base leading-relaxed mt-2.5">
+                      A quick homemade meal relies on pantry staple proteins, vibrant vegetables, and minimal prep cookware like a single skillet or baking sheet. By balancing lean protein with fiber-rich ingredients, you can finish a complete, nourishing dinner in under 30 minutes without culinary fatigue.
+                    </p>
+                    <div className="mt-3 text-xs text-stone-600">
+                      <span>Related guide: </span>
+                      <Link
+                        to="/recipes/healthy-chicken-dinner"
+                        className="font-medium text-stone-900 hover:underline"
+                      >
+                        Discover our quick healthy chicken dinner guide
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* Direct Question H2 #2 */}
+                  <div>
+                    <h2 className="text-xl sm:text-2xl font-serif font-medium text-stone-900">
+                      How do you substitute ingredients without altering a recipe's flavor balance?
+                    </h2>
+                    {/* Answer-first 1-2 sentence paragraph */}
+                    <p className="text-stone-700 text-sm sm:text-base leading-relaxed mt-2.5">
+                      Substitute ingredients within the same flavor and moisture category, swapping equal ratios of acids like lemon juice for vinegar or vegetable stock for poultry broth. Matching both acidity and moisture content prevents texture disruption while preserving intended aroma.
+                    </p>
+                    <div className="mt-3 flex flex-wrap gap-4 text-xs text-stone-600">
+                      <span>Internal links: </span>
+                      <Link
+                        to="/recipes/fluffy-cheese-omelette"
+                        className="font-medium text-stone-900 hover:underline"
+                      >
+                        Read our step-by-step guide to making a fluffy cheese omelette
+                      </Link>
+                      <span>·</span>
+                      <Link
+                        to="/recipes/vegetarian-curry"
+                        className="font-medium text-stone-900 hover:underline"
+                      >
+                        Browse hearty vegetarian main course dishes
+                      </Link>
+                    </div>
+                  </div>
+                </div>
               </div>
             </section>
 

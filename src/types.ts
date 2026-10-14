@@ -59,6 +59,12 @@ export interface BlogPost {
     fat: string;
   };
   tags: string[];
+  seoTitle?: string;
+  metaDescription?: string;
+  imageAlt?: string;
+  customPath?: string;
+  aeoQuestions?: Array<{ question: string; answer: string }>;
+  internalLinks?: Array<{ url: string; anchorText: string; context: string }>;
 }
 
 export interface CommentItem {

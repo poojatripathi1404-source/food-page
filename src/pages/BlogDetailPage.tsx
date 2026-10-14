@@ -175,7 +175,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug }) => {
         <div className="relative aspect-16/9 rounded-2xl overflow-hidden shadow-sm border border-stone-200 bg-stone-100">
           <ImageWithFallback
             src={post.heroImage}
-            alt={post.title}
+            alt={post.imageAlt || post.title}
             fallbackTitle={post.title}
             className="w-full h-full object-cover"
           />
@@ -225,6 +225,50 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug }) => {
                 </p>
               ))}
             </section>
+
+            {/* AEO (Answer Engine Optimization) Direct Questions & Answer-First Paragraphs */}
+            {post.aeoQuestions && post.aeoQuestions.length > 0 && (
+              <section className="bg-white border border-stone-200 rounded-xl p-6 sm:p-7 shadow-2xs space-y-6">
+                <div className="text-xs uppercase tracking-widest text-stone-500 font-mono font-semibold">
+                  Chef Q&A · Essential Technique Secrets
+                </div>
+                {post.aeoQuestions.map((qa, idx) => (
+                  <div key={idx} className={idx > 0 ? "pt-5 border-t border-stone-100" : ""}>
+                    <h2 className="text-xl sm:text-2xl font-serif font-medium text-stone-900 leading-snug">
+                      {qa.question}
+                    </h2>
+                    <p className="text-stone-700 text-sm sm:text-base leading-relaxed font-sans mt-2">
+                      {qa.answer}
+                    </p>
+                  </div>
+                ))}
+              </section>
+            )}
+
+            {/* Internal Navigation Links with Descriptive Anchor Text */}
+            {post.internalLinks && post.internalLinks.length > 0 && (
+              <section className="bg-stone-100/70 border border-stone-200/80 rounded-xl p-6 space-y-3">
+                <div className="text-xs uppercase tracking-widest text-stone-500 font-mono font-semibold">
+                  Related Recipe Guides & Recommendations
+                </div>
+                <ul className="space-y-2.5 text-sm text-stone-700">
+                  {post.internalLinks.map((link, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <span className="text-stone-400 font-mono">›</span>
+                      <span>
+                        {link.context}
+                        <Link
+                          to={link.url}
+                          className="font-medium text-stone-900 underline hover:text-stone-700"
+                        >
+                          {link.anchorText}
+                        </Link>
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
 
             {/* Culinary Science Card */}
             <section className="bg-stone-900 text-stone-100 p-6 sm:p-7 rounded-xl border border-stone-800 space-y-2.5">

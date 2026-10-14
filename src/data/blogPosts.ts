@@ -2,7 +2,418 @@ import { BlogPost } from '../types';
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'fluffy-cheese-omelette',
+    customPath: '/recipes/fluffy-cheese-omelette',
+    seoTitle: 'Fluffy Cheese Omelette Recipe | Quick Breakfast Ideas',
+    metaDescription: 'Master this fluffy cheese omelette recipe in 10 minutes with simple pantry ingredients and gentle heat. Read our tested chef tips and cook breakfast now!',
+    title: 'Fluffy Cheese Omelette Recipe',
+    subtitle: 'Golden folded eggs with molten sharp cheddar, cultured butter, and delicate garden chives',
+    category: 'Breakfast Ideas',
+    author: {
+      name: 'Chef Clara Laurent',
+      role: 'Breakfast Specialist & Culinary Instructor',
+      bio: 'Trained at the Paul Bocuse Institute, specializing in egg cookery and morning kitchen craft.'
+    },
+    publishedDate: 'October 14, 2026',
+    readTimeMinutes: 5,
+    heroImage: '/src/assets/images/fluffy_cheese_omelette_1791994315025.jpg',
+    imageAlt: 'Golden cooked cheese omelette on a white plate with melted cheddar and fresh chives',
+    imageCaption: 'Fig. 1 — Golden cooked cheese omelette on a white ceramic plate with melted cheddar oozing from center and fresh chives.',
+    summary: 'A fluffy cheese omelette requires no cream—only 60 seconds of vigorous whisking, foaming butter, and gentle heat control to lock in a molten center.',
+    origin: 'Lyon, France / Modern Breakfast Kitchen',
+    difficulty: 'Beginner',
+    prepTime: '5 min',
+    cookTime: '5 min',
+    servingsBase: 2,
+    layoutTheme: 'artisan-baker',
+    aeoQuestions: [
+      {
+        question: 'How do you make an omelette fluffy without adding milk or cream?',
+        answer: 'Whisk eggs vigorously for a full 60 seconds with a fork to incorporate microscopic air bubbles, then cook over gentle medium-low heat with foaming butter. The trapped air expands as the egg proteins gently set, creating an airy, cloud-like texture without needing dairy liquid.'
+      },
+      {
+        question: 'What is the best cheese for a quick breakfast omelette?',
+        answer: 'A blend of freshly grated sharp white cheddar and gruyère provides the optimal combination of rich meltability and savory depth. Grating whole block cheese prevents anti-caking starches from interfering with the smooth, molten center.'
+      }
+    ],
+    internalLinks: [
+      {
+        url: '/recipes/healthy-chicken-dinner',
+        anchorText: 'Discover our quick healthy chicken dinner guide',
+        context: 'Looking for a nutritious follow-up meal for tonight? '
+      },
+      {
+        url: '/recipes/vegetarian-curry',
+        anchorText: 'Browse hearty vegetarian main course dishes',
+        context: 'Explore vibrant plant-based dishes: '
+      },
+      {
+        url: '/recipes',
+        anchorText: 'See more quick breakfast recipe ideas',
+        context: 'Explore all morning formulas in our kitchen catalog: '
+      }
+    ],
+    introProse: [
+      'A great cheese omelette is the ultimate test of morning kitchen technique. When executed properly, the exterior is a uniform pale gold without scorched brown spots, while the folded interior remains tender, creamy, and loaded with molten cheese.',
+      'Many home cooks mistakenly splash milk or cream into raw eggs seeking fluffiness, but liquid dairy actually dilutes egg albumen and causes weeping. True volume is achieved entirely through kinetic aeration: whipping air directly into the albumin matrix before it contacts a warm buttered pan.'
+    ],
+    culinaryScience: {
+      headline: 'Albumen Aeration & Thermal Egg Protein Coagulation',
+      explanation: 'Egg yolk lipids and egg white albumens contain ovalbumin proteins that unfold (denature) when beaten, trapping microscopic bubbles of air. As the mixture heats to 65°C (149°F), the proteins coagulate into a delicate structural mesh that traps both air and moisture, expanding the volume before dehydration occurs.'
+    },
+    equipment: [
+      '8-inch non-stick skillet or seasoned carbon steel pan',
+      'Silicone spatula with thin flexible edge',
+      'Balloon whisk or dinner fork',
+      'Coarse microplane cheese grater'
+    ],
+    ingredients: [
+      { item: 'Fresh Large Pasture-Raised Eggs', baseAmount: 4, unit: 'whole', notes: 'Brought to room temperature', category: 'Main' },
+      { item: 'Sharp White Cheddar Cheese', baseAmount: 60, unit: 'g', notes: 'Freshly grated off the block', category: 'Filling' },
+      { item: 'Aged Gruyère or Swiss Cheese', baseAmount: 30, unit: 'g', notes: 'Adds nutty meltability', category: 'Filling' },
+      { item: 'European Cultured Salted Butter', baseAmount: 20, unit: 'g', notes: 'Divided into two knobs', category: 'Sauce' },
+      { item: 'Fresh Garden Chives', baseAmount: 8, unit: 'g', notes: 'Finely minced', category: 'Garnish' },
+      { item: 'Flaky Sea Salt & White Pepper', baseAmount: 2, unit: 'g', notes: 'Seasoned right before pan entry', category: 'Spices' }
+    ],
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Aeration & Seasoning',
+        durationMinutes: 2,
+        durationLabel: '2 min',
+        description: 'Crack eggs into a wide ceramic bowl. Whisk vigorously for a full 60 seconds with a fork until the mixture is uniform, bubbly, and no ropy albumen strands remain. Season with a pinch of flaky sea salt and white pepper.',
+        keyTechnique: 'Vigorous fork whipping incorporates air bubbles that swell during cooking.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Melt Butter to Gentle Foam',
+        durationMinutes: 1,
+        durationLabel: '1 min',
+        description: 'Heat non-stick pan over medium-low heat. Add 15g butter and swirl gently as it melts and foams without browning. Foaming butter creates a natural non-stick steam cushion.',
+        keyTechnique: 'Pour eggs the moment butter foam subsides before milk solids brown.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Curd Formation & Edge Pull',
+        durationMinutes: 2,
+        durationLabel: '2 min',
+        description: 'Pour eggs into skillet. Let bottom set for 15 seconds. Using silicone spatula, push cooked outer edges gently toward the center while tilting the pan to let raw liquid run onto the bare hot surface.',
+        keyTechnique: 'Pushing curds inward creates multi-layered velvety folds.'
+      },
+      {
+        stepNumber: 4,
+        title: 'Cheese Melting & French Fold',
+        durationMinutes: 1,
+        durationLabel: '1 min',
+        description: 'When the top is soft and glossy but no longer liquid, remove pan from heat. Scatter grated cheddar and gruyère in a line down the center. Tilt pan and use spatula to roll one third over the cheese, then roll onto a warmed plate seam-side down.',
+        keyTechnique: 'Residual thermal energy melts cheese completely off the direct flame.'
+      },
+      {
+        stepNumber: 5,
+        title: 'Butter Glaze & Chive Finish',
+        durationMinutes: 1,
+        durationLabel: '1 min',
+        description: 'Rub remaining 5g cold butter over the warm curved top of the omelette to produce a glistening satin sheen. Garnish with minced fresh chives and freshly cracked pepper.',
+        keyTechnique: 'A top butter gloss keeps the omelette exterior supple.'
+      }
+    ],
+    proTips: [
+      'Grating your own block cheese is essential; pre-shredded bagged cheese is coated in potato starch that inhibits smooth melting.',
+      'Never cook an omelette over high heat; high heat contracts proteins tightly, squeezing water out and causing rubbery texture.',
+      'Use a warm plate; a cold plate instantly chills the egg and congeals melted cheese.'
+    ],
+    winePairing: {
+      beverage: 'Freshly Squeezed Blood Orange Mimosa or Champagne Brut',
+      vintageOrRegion: 'Reims, France',
+      tastingNote: 'Crisp effervescence and citrus brightness cleanly cut through rich cultured butter and molten cheddar.'
+    },
+    nutrition: {
+      calories: 390,
+      protein: '24g',
+      carbs: '2g',
+      fat: '32g'
+    },
+    tags: ['Breakfast', 'Eggs', 'Cheese', 'Quick Meals', 'French Technique']
+  },
+  {
+    slug: 'healthy-chicken-dinner',
+    customPath: '/recipes/healthy-chicken-dinner',
+    seoTitle: 'Healthy Chicken Recipe for Dinner | Simple Meals',
+    metaDescription: 'Prepare this tender herb-roasted healthy chicken dinner in 30 minutes with crisp asparagus and lemon butter. Follow our quick step-by-step guide tonight!',
+    title: 'Healthy Chicken Recipe for Dinner',
+    subtitle: 'Tender pan-seared herb chicken breast with charred garden asparagus, garlic, and fresh lemon',
+    category: 'Dinner Ideas',
+    author: {
+      name: 'Dr. Evelyn Reed',
+      role: 'Culinary Nutritionist & Recipe Developer',
+      bio: 'Author of Simple Weeknight Nutrition, focusing on high-protein Mediterranean-inspired meals.'
+    },
+    publishedDate: 'October 13, 2026',
+    readTimeMinutes: 7,
+    heroImage: '/src/assets/images/healthy_chicken_dinner_1791994316518.jpg',
+    imageAlt: 'Juicy seared golden herb chicken breast on an elegant dinner plate with tender charred asparagus and lemon slices',
+    imageCaption: 'Fig. 2 — Sliced juicy golden herb chicken breast served with blistered green asparagus and lemon pan jus.',
+    summary: 'A healthy weeknight chicken dinner that stays remarkably juicy: even-thickness breast fillets, a brief dry brine, and pan searing with fresh aromatics.',
+    origin: 'Mediterranean Coastal Kitchen',
+    difficulty: 'Beginner',
+    prepTime: '10 min',
+    cookTime: '15 min',
+    servingsBase: 2,
+    layoutTheme: 'coastal-plating',
+    aeoQuestions: [
+      {
+        question: 'How do you keep chicken breast juicy and tender during weeknight cooking?',
+        answer: 'Pound the chicken breast to an even half-inch thickness before searing over medium-high heat until the internal temperature reaches 160°F (71°C). Allowing the meat to rest for five minutes under loose foil lets juices redistribute throughout the fibers instead of leaking onto the cutting board.'
+      },
+      {
+        question: 'What healthy side dishes pair best with pan-seared chicken?',
+        answer: 'Tender charred asparagus spears, roasted broccolini, or garlic-infused cauliflower mash pair seamlessly by adding complex micronutrients and fiber without heavy refined starches. A squeeze of fresh lemon ties the plate together with bright, refreshing acidity.'
+      }
+    ],
+    internalLinks: [
+      {
+        url: '/recipes/fluffy-cheese-omelette',
+        anchorText: 'Read our step-by-step guide to making a fluffy cheese omelette',
+        context: 'Planning quick protein-rich breakfasts as well? '
+      },
+      {
+        url: '/recipes/vegetarian-curry',
+        anchorText: 'Browse hearty vegetarian main course dishes',
+        context: 'Looking for plant-forward dinner inspiration? '
+      },
+      {
+        url: '/recipes',
+        anchorText: 'Explore our complete collection of easy homemade dinner recipes',
+        context: 'Discover more fast, wholesome meals: '
+      }
+    ],
+    introProse: [
+      'Boneless skinless chicken breast has an undeserved reputation for being dry, fibrous, and mundane. In reality, it is a culinary blank canvas that turns succulent and flavorful when you master two fundamental techniques: uniform thickness and pan moisture management.',
+      'By seasoning with dried oregano, thyme, and smoked paprika, then searing in a hint of extra virgin olive oil and finishing with garlic and fresh lemon juice, you create a gourmet dinner that provides over 40 grams of lean protein per serving with negligible saturated fats.'
+    ],
+    culinaryScience: {
+      headline: 'Fiber Tension & Carryover Thermal Equilibrium',
+      explanation: 'Muscle fibers in poultry breasts contract aggressively above 68°C (155°F), expelling intracellular moisture. Removing the chicken from heat at 71°C (160°F) allows carryover cooking to safely reach the FDA 74°C (165°F) pasteurization threshold without over-tightening muscle proteins.'
+    },
+    equipment: [
+      'Heavy 10-inch stainless steel or cast iron skillet',
+      'Meat mallet or heavy rolling pin',
+      'Instant-read digital meat thermometer',
+      'Tongs and carving board'
+    ],
+    ingredients: [
+      { item: 'Boneless Skinless Chicken Breasts', baseAmount: 400, unit: 'g', notes: '2 center-cut breasts, pounded to 1/2-inch even thickness', category: 'Main' },
+      { item: 'Extra Virgin Olive Oil', baseAmount: 20, unit: 'ml', notes: 'Heart-healthy cooking fat', category: 'Sauce' },
+      { item: 'Fresh Green Asparagus Spears', baseAmount: 250, unit: 'g', notes: 'Woody ends snapped and discarded', category: 'Main' },
+      { item: 'Fresh Garlic Cloves', baseAmount: 3, unit: 'cloves', notes: 'Thinly sliced', category: 'Aromatics' },
+      { item: 'Dried Oregano & Thyme', baseAmount: 4, unit: 'g', notes: 'Mediterranean herb rub', category: 'Spices' },
+      { item: 'Smoked Spanish Paprika', baseAmount: 2, unit: 'g', notes: 'Adds color and subtle wood smoke', category: 'Spices' },
+      { item: 'Fresh Lemon Juice & Zest', baseAmount: 1, unit: 'lemon', notes: 'Natural deglazing acid', category: 'Sauce' },
+      { item: 'Fine Sea Salt & Black Pepper', baseAmount: 4, unit: 'g', notes: 'Coats chicken surface evenly', category: 'Spices' }
+    ],
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Pounding for Uniform Thickness',
+        durationMinutes: 5,
+        durationLabel: '5 min',
+        description: 'Place chicken breasts between two sheets of parchment paper. Using the flat side of a meat mallet, gently pound thicker sections until each breast is an even 1/2-inch (1.2cm) thickness from end to end.',
+        keyTechnique: 'Even thickness ensures the tip does not overcook while waiting for the thick center to finish.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Dry Herb Rub Seasoning',
+        durationMinutes: 3,
+        durationLabel: '3 min',
+        description: 'Pat chicken completely dry with paper towels. Rub both sides with 1 teaspoon of olive oil, dried oregano, thyme, smoked paprika, salt, and freshly cracked black pepper.',
+        keyTechnique: 'Removing surface water promotes Maillard browning rather than boiling in moisture.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Golden Pan Sear',
+        durationMinutes: 8,
+        durationLabel: '8 min',
+        description: 'Heat 1 tablespoon of olive oil in a heavy skillet over medium-high heat until shimmering. Lay chicken breasts away from you. Sear undisturbed for 4 to 5 minutes until deep golden brown. Flip once and cook for 3 to 4 minutes until thermometer registers 160°F (71°C).',
+        keyTechnique: 'Resist moving the meat during the first 4 minutes to allow a savory crust to form.'
+      },
+      {
+        stepNumber: 4,
+        title: 'Blistering the Asparagus',
+        durationMinutes: 4,
+        durationLabel: '4 min',
+        description: 'Transfer cooked chicken to a warm cutting board and tent loosely with foil. In the remaining pan juices, toss trimmed asparagus and sliced garlic. Sauté for 3 to 4 minutes until asparagus is bright green and blistered.',
+        keyTechnique: 'Cooking vegetables in the chicken pan absorbs residual caramelized pan drippings.'
+      },
+      {
+        stepNumber: 5,
+        title: 'Pan Deglaze & Plating',
+        durationMinutes: 2,
+        durationLabel: '2 min',
+        description: 'Squeeze half a fresh lemon directly into the skillet, scraping up any browned bits with a wooden spoon. Slice chicken breasts against the grain, arrange alongside asparagus, and spoon the warm lemon garlic pan jus over the meat.',
+        keyTechnique: 'Slicing against the grain cuts through muscle fibers for maximum tenderness.'
+      }
+    ],
+    proTips: [
+      'Always allow chicken to rest for 5 minutes before slicing; slicing immediately causes up to 40% of internal juices to pool on the board.',
+      'Add lemon juice right at the end to keep garlic from burning and maintain bright, vibrant vitamin C notes.',
+      'Pair leftovers with crisp salad greens or brown rice for effortless next-day meal prep.'
+    ],
+    winePairing: {
+      beverage: 'Sauvignon Blanc or Sparkling Mineral Water with Lime',
+      vintageOrRegion: 'Marlborough, New Zealand',
+      tastingNote: 'Herbaceous lemongrass and zesty citrus notes mirror the oregano and fresh lemon pan jus.'
+    },
+    nutrition: {
+      calories: 340,
+      protein: '42g',
+      carbs: '6g',
+      fat: '14g'
+    },
+    tags: ['Healthy', 'Chicken', 'Dinner Ideas', 'High Protein', 'Gluten Free']
+  },
+  {
+    slug: 'vegetarian-curry',
+    customPath: '/recipes/vegetarian-curry',
+    seoTitle: 'Vegetarian Curry Recipe | Easy Main Course',
+    metaDescription: 'Cook this fragrant vegetarian coconut curry loaded with tender chickpeas, spinach, and warming spices. Follow our easy 25-minute guide to make dinner today!',
+    title: 'Vegetarian Curry Recipe',
+    subtitle: 'Creamy coconut vegetable curry with chickpeas, cauliflower, tender spinach, and toasted spices',
+    category: 'Vegetarian Meals',
+    author: {
+      name: 'Chef Ananya Sharma',
+      role: 'Ayurvedic Chef & Plant-Based Culinary Author',
+      bio: 'Author of The Vibrant Spice Table, teaching modern vegetarian cooking rooted in traditional Indian spice layering.'
+    },
+    publishedDate: 'October 12, 2026',
+    readTimeMinutes: 8,
+    heroImage: '/src/assets/images/vegetarian_curry_1791994316435.jpg',
+    imageAlt: 'Fragrant creamy vegetarian coconut curry in a rustic stoneware bowl garnished with fresh cilantro and lime',
+    imageCaption: 'Fig. 3 — Vibrant golden coconut curry laden with chickpeas, cauliflower, and wilted spinach alongside warm naan bread.',
+    summary: 'An aromatic 25-minute vegetarian curry crafted from whole spices bloomed in coconut oil, simmered with chickpeas and sweet coconut milk.',
+    origin: 'South Indian Coastal / Modern Plant-Based',
+    difficulty: 'Beginner',
+    prepTime: '10 min',
+    cookTime: '18 min',
+    servingsBase: 4,
+    layoutTheme: 'heritage-simmer',
+    aeoQuestions: [
+      {
+        question: 'How do you build deep, restaurant-quality flavor in a quick vegetarian curry?',
+        answer: 'Bloom whole ground spices in hot oil or ghee for 30 to 45 seconds before adding onions, ginger, and garlic paste. Blooming dissolves fat-soluble essential oils, unlocking intense aromatic richness that simmering in liquid alone can never produce.'
+      },
+      {
+        question: 'What vegetables hold up best without getting mushy in coconut curry?',
+        answer: 'Firm root vegetables like sweet potatoes and cauliflower florets paired with hearty legumes such as chickpeas retain ideal bite and structure throughout simmering. Delicate greens like baby spinach should only be stirred in during the final 90 seconds to preserve color and nutrients.'
+      }
+    ],
+    internalLinks: [
+      {
+        url: '/recipes/healthy-chicken-dinner',
+        anchorText: 'Discover our quick healthy chicken dinner guide',
+        context: 'Prefer poultry options for busy weeknights? '
+      },
+      {
+        url: '/recipes/fluffy-cheese-omelette',
+        anchorText: 'Read our step-by-step guide to making a fluffy cheese omelette',
+        context: 'Explore quick high-protein morning recipes: '
+      },
+      {
+        url: '/recipes',
+        anchorText: 'Explore our complete collection of easy homemade dinner recipes',
+        context: 'Discover all plant-based and comforting dinner recipes: '
+      }
+    ],
+    introProse: [
+      'A great vegetarian curry is neither heavy nor bland. It is a symphony of contrasting textures: tender chickpeas that yield with creamy heartiness, crisp-tender cauliflower florets that soak up golden turmeric gravy, and silky ribbons of fresh baby spinach.',
+      'The foundational secret of this recipe is "tadka" or spice blooming. Rather than simply dumping curry powder into boiling liquid, we activate cumin, coriander, ground ginger, and garam masala in hot coconut oil first, infusing every drop of coconut cream with intoxicating botanical complexity.'
+    ],
+    culinaryScience: {
+      headline: 'Lipid Solubilization of Turmeric Curcuminoids & Essential Terpenes',
+      explanation: 'Curcumin, the primary antioxidant pigment in turmeric, is hydrophobic and possesses low bioavailability in pure water. Sautéing it in medium-chain triglycerides found in coconut oil dissolves curcumin and spice terpenes, releasing deep golden color and maximum aromatic flavor.'
+    },
+    equipment: [
+      'Wide 4-quart Dutch oven or deep chef’s saute pan',
+      'Wooden cooking spoon',
+      'Chef knife and cutting board',
+      'Can opener'
+    ],
+    ingredients: [
+      { item: 'Cooked Chickpeas (Garbanzo Beans)', baseAmount: 400, unit: 'g', notes: 'Rinsed and drained (1 can)', category: 'Main' },
+      { item: 'Fresh Cauliflower Florets', baseAmount: 250, unit: 'g', notes: 'Cut into bite-sized pieces', category: 'Main' },
+      { item: 'Full-Fat Coconut Milk', baseAmount: 400, unit: 'ml', notes: 'Shaken well before opening', category: 'Sauce' },
+      { item: 'Fresh Baby Spinach Leaves', baseAmount: 100, unit: 'g', notes: 'Wilted in at the very finish', category: 'Main' },
+      { item: 'Yellow Onion (finely diced)', baseAmount: 1, unit: 'whole', notes: 'Sweated until translucent', category: 'Aromatics' },
+      { item: 'Fresh Ginger & Garlic Paste', baseAmount: 25, unit: 'g', notes: 'Grated fresh', category: 'Aromatics' },
+      { item: 'Ground Turmeric, Cumin & Coriander', baseAmount: 12, unit: 'g', notes: 'Balanced spice blend', category: 'Spices' },
+      { item: 'Garam Masala Blend', baseAmount: 5, unit: 'g', notes: 'Warming aromatic finish', category: 'Spices' },
+      { item: 'Crushed San Marzano Tomatoes', baseAmount: 200, unit: 'g', notes: 'Adds savory acidity to balance cream', category: 'Sauce' },
+      { item: 'Fresh Lime Wedges & Cilantro', baseAmount: 1, unit: 'whole', notes: 'For bright fresh garnish', category: 'Garnish' }
+    ],
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Aromatics & Translucent Sweat',
+        durationMinutes: 4,
+        durationLabel: '4 min',
+        description: 'Heat 2 tablespoons of coconut oil in a wide pan over medium heat. Add diced yellow onion with a pinch of salt. Sauté for 4 minutes until soft and translucent.',
+        keyTechnique: 'Sweating onions slowly releases natural sweet fructose without browning.'
+      },
+      {
+        stepNumber: 2,
+        title: 'The Spice Blooming (Tadka)',
+        durationMinutes: 1,
+        durationLabel: '1 min',
+        description: 'Stir in grated ginger and garlic paste for 30 seconds. Add ground turmeric, cumin, coriander, and chili flakes. Stir continuously in the warm oil for 45 seconds until fragrant.',
+        keyTechnique: 'Hot oil blooms fat-soluble spice oils, creating a foundational flavor base.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Tomato Reduction & Coconut Simmer',
+        durationMinutes: 3,
+        durationLabel: '3 min',
+        description: 'Pour in crushed tomatoes, scraping the bottom of the pan to dissolve any browned bits. Cook for 2 minutes until tomatoes darken, then pour in full-fat coconut milk and bring to a gentle bubble.',
+        keyTechnique: 'Deglazing with tomato acid prevents ground spices from scorching.'
+      },
+      {
+        stepNumber: 4,
+        title: 'Simmering Cauliflower & Chickpeas',
+        durationMinutes: 8,
+        durationLabel: '8 min',
+        description: 'Add cauliflower florets and drained chickpeas. Reduce heat to medium-low, cover with lid, and simmer gently for 8 to 10 minutes until cauliflower is tender when pierced with a fork.',
+        keyTechnique: 'Simmering covered traps steam, cooking cauliflower through evenly.'
+      },
+      {
+        stepNumber: 5,
+        title: 'Spinach Wilt & Fresh Lime Squeeze',
+        durationMinutes: 2,
+        durationLabel: '2 min',
+        description: 'Uncover pan. Stir in garam masala and baby spinach. Fold gently for 90 seconds until spinach wilts into deep emerald ribbons. Remove from heat, squeeze fresh lime juice over top, and garnish with chopped fresh cilantro.',
+        keyTechnique: 'Adding spinach off-heat keeps leaves bright green and preserves vitamin content.'
+      }
+    ],
+    proTips: [
+      'Always use full-fat coconut milk rather than light; the healthy fats carry spice aromas and produce a luscious, velvety sauce.',
+      'Squeeze fresh lime juice right before serving; the burst of ascorbic acid brightens the deep coconut sweetness.',
+      'Serve with steamed basmati rice or warm garlic naan to soak up every drop of aromatic curry gravy.'
+    ],
+    winePairing: {
+      beverage: 'Dry Alsatian Pinot Gris or Iced Cardamom Chai',
+      vintageOrRegion: 'Alsace, France',
+      tastingNote: 'Subtle notes of white peach, ginger, and balanced acidity harmoniously embrace rich coconut milk and mild spices.'
+    },
+    nutrition: {
+      calories: 380,
+      protein: '14g',
+      carbs: '42g',
+      fat: '19g'
+    },
+    tags: ['Vegetarian', 'Curry', 'Vegan Friendly', 'Dinner Ideas', 'Plant Based']
+  },
+  {
     slug: 'neapolitan-pizza-art',
+    customPath: '/recipes/neapolitan-pizza-art',
+    seoTitle: 'Neapolitan Pizza Recipe | Authentic Wood-Fired Crust',
+    metaDescription: 'Bake authentic artisanal Neapolitan pizza at home with high-hydration dough and San Marzano tomatoes. Read our 48-hour cold fermentation method now!',
     title: 'The Art of Handcrafted Neapolitan Pizza',
     subtitle: 'High-hydration dough, 48-hour cold fermentation, and blistering leopard-spotted crust',
     category: 'Artisan Baking',
