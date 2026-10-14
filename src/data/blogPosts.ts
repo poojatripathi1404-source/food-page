@@ -16,7 +16,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     publishedDate: 'October 14, 2026',
     readTimeMinutes: 5,
-    heroImage: '/src/assets/images/fluffy_cheese_omelette_1791994315025.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1510693206972-df098062cb71?auto=format&fit=crop&w=800&q=80',
     imageAlt: 'Golden cooked cheese omelette on a white plate with melted cheddar and fresh chives',
     imageCaption: 'Fig. 1 — Golden cooked cheese omelette on a white ceramic plate with melted cheddar oozing from center and fresh chives.',
     summary: 'A fluffy cheese omelette requires no cream—only 60 seconds of vigorous whisking, foaming butter, and gentle heat control to lock in a molten center.',
@@ -150,7 +150,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     publishedDate: 'October 13, 2026',
     readTimeMinutes: 7,
-    heroImage: '/src/assets/images/healthy_chicken_dinner_1791994316518.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80',
     imageAlt: 'Juicy seared golden herb chicken breast on an elegant dinner plate with tender charred asparagus and lemon slices',
     imageCaption: 'Fig. 2 — Sliced juicy golden herb chicken breast served with blistered green asparagus and lemon pan jus.',
     summary: 'A healthy weeknight chicken dinner that stays remarkably juicy: even-thickness breast fillets, a brief dry brine, and pan searing with fresh aromatics.',
@@ -286,7 +286,7 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     publishedDate: 'October 12, 2026',
     readTimeMinutes: 8,
-    heroImage: '/src/assets/images/vegetarian_curry_1791994316435.jpg',
+    heroImage: 'https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?auto=format&fit=crop&w=800&q=80',
     imageAlt: 'Fragrant creamy vegetarian coconut curry in a rustic stoneware bowl garnished with fresh cilantro and lime',
     imageCaption: 'Fig. 3 — Vibrant golden coconut curry laden with chickpeas, cauliflower, and wilted spinach alongside warm naan bread.',
     summary: 'An aromatic 25-minute vegetarian curry crafted from whole spices bloomed in coconut oil, simmered with chickpeas and sweet coconut milk.',
@@ -410,6 +410,143 @@ export const BLOG_POSTS: BlogPost[] = [
     tags: ['Vegetarian', 'Curry', 'Vegan Friendly', 'Dinner Ideas', 'Plant Based']
   },
   {
+    slug: 'fluffy-buttermilk-pancakes',
+    customPath: '/recipes/fluffy-buttermilk-pancakes',
+    seoTitle: 'Fluffy Buttermilk Pancakes Recipe | Easy Breakfast Ideas',
+    metaDescription: 'Learn how to cook tall, golden, and ultra-fluffy buttermilk pancakes in 15 minutes. Follow our tested batter science and weekend morning cooking guide!',
+    title: 'Fluffy Buttermilk Pancakes Recipe',
+    subtitle: 'Golden griddled cakes with airy honeycomb crumb, melting butter, and pure amber maple syrup',
+    category: 'Breakfast Ideas',
+    author: {
+      name: 'Chef Clara Laurent',
+      role: 'Breakfast Specialist & Culinary Instructor',
+      bio: 'Trained at the Paul Bocuse Institute, specializing in pastry science and morning kitchen craft.'
+    },
+    publishedDate: 'October 11, 2026',
+    readTimeMinutes: 6,
+    heroImage: 'https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800&q=80',
+    imageAlt: 'Tall stack of golden fluffy buttermilk pancakes with melting butter and pure maple syrup',
+    imageCaption: 'Fig. 4 — Golden griddled buttermilk pancake stack drizzled with pure Quebec maple syrup and fresh berries.',
+    summary: 'True diner-style fluffy pancakes rely on active buttermilk acid reacting with baking soda and a gentle fold that leaves flour pockets intact.',
+    origin: 'American Diner Craft / Modern Breakfast Kitchen',
+    difficulty: 'Beginner',
+    prepTime: '8 min',
+    cookTime: '10 min',
+    servingsBase: 4,
+    layoutTheme: 'artisan-baker',
+    aeoQuestions: [
+      {
+        question: 'What makes buttermilk pancakes so light and fluffy?',
+        answer: 'The natural lactic acid in cultured buttermilk reacts instantly with baking soda to release carbon dioxide gas bubbles. Cooking over gentle griddle heat expands these bubbles before the flour proteins set, producing an airy, pillow-soft honeycomb crumb.'
+      },
+      {
+        question: 'Why should you never overmix pancake batter?',
+        answer: 'Over-mixing activates the gluten proteins in wheat flour, transforming what should be tender, fluffy pancakes into rubbery, chewy discs. Gently folding the batter until just combined with small lumps remaining guarantees maximum tenderness.'
+      }
+    ],
+    internalLinks: [
+      {
+        url: '/recipes/fluffy-cheese-omelette',
+        anchorText: 'Read our step-by-step guide to making a fluffy cheese omelette',
+        context: 'Looking for more weekend morning breakfast inspiration? '
+      },
+      {
+        url: '/recipes/healthy-chicken-dinner',
+        anchorText: 'Discover our quick healthy chicken dinner guide',
+        context: 'Planning dinner for later today? '
+      },
+      {
+        url: '/recipes',
+        anchorText: 'See more quick breakfast recipe ideas',
+        context: 'Explore our complete breakfast collection: '
+      }
+    ],
+    introProse: [
+      'The difference between flat, dense pancakes and glorious diner-style fluffy stacks is not luck—it is pure culinary chemistry. When cultured buttermilk meets sodium bicarbonate (baking soda), millions of microscopic CO2 bubbles nucleate inside the batter.',
+      'The key discipline is gentle restraint: whisking dry and wet ingredients with a soft rubber spatula just until flour streaks disappear. Leaving small lumps intact guarantees that gluten strands remain short and delicate, giving you tall, cloud-like pancakes that soak up warm maple syrup like a sponge.'
+    ],
+    culinaryScience: {
+      headline: 'Lactic Acid Leavening & Starch Gelatinization',
+      explanation: 'Buttermilk possesses a pH between 4.4 and 4.8. When blended with baking soda, the acid-base neutralization reaction produces carbon dioxide gas and sodium lactate. On a 180°C (350°F) griddle, the gas rapidly expands while starch granules absorb liquid and swell, setting the porous honeycomb interior before bubbles can escape.'
+    },
+    equipment: [
+      'Heavy cast iron griddle or non-stick skillet',
+      'Wide flat silicone spatula',
+      'Large mixing bowl and wire whisk',
+      'Standard 1/3-cup batter ladle'
+    ],
+    ingredients: [
+      { item: 'Unbleached All-Purpose Flour', baseAmount: 250, unit: 'g', notes: 'Sifted to prevent compact clumps', category: 'Dough' },
+      { item: 'Cultured Low-Fat or Whole Buttermilk', baseAmount: 360, unit: 'ml', notes: 'Brought to room temperature', category: 'Main' },
+      { item: 'Large Farm Eggs', baseAmount: 2, unit: 'whole', notes: 'Lightly beaten', category: 'Main' },
+      { item: 'European Unsalted Butter (melted)', baseAmount: 45, unit: 'g', notes: 'Cooled slightly before mixing', category: 'Sauce' },
+      { item: 'Granulated Cane Sugar', baseAmount: 25, unit: 'g', notes: 'Aids delicate griddle browning', category: 'Dough' },
+      { item: 'Baking Powder', baseAmount: 8, unit: 'g', notes: 'Double-acting leavening agent', category: 'Spices' },
+      { item: 'Baking Soda', baseAmount: 3, unit: 'g', notes: 'Reacts with buttermilk acid', category: 'Spices' },
+      { item: 'Fine Sea Salt', baseAmount: 2, unit: 'g', notes: 'Balances dairy sweetness', category: 'Spices' },
+      { item: 'Pure Amber Maple Syrup & Salted Butter', baseAmount: 60, unit: 'ml', notes: 'For warm tabletop serving', category: 'Garnish' }
+    ],
+    steps: [
+      {
+        stepNumber: 1,
+        title: 'Whisk Dry Foundation',
+        durationMinutes: 2,
+        durationLabel: '2 min',
+        description: 'In a large ceramic bowl, whisk together flour, sugar, baking powder, baking soda, and fine sea salt until evenly distributed.',
+        keyTechnique: 'Thorough dry blending prevents concentrated pockets of baking soda.'
+      },
+      {
+        stepNumber: 2,
+        title: 'Whisk Wet Ingredients & Combine',
+        durationMinutes: 3,
+        durationLabel: '3 min',
+        description: 'In a separate measuring jug, whisk buttermilk, beaten eggs, and melted cooled butter. Pour wet ingredients into dry bowl. Fold with a silicone spatula for only 20 seconds. Stop when flour pockets disappear; leave small lumps intact. Rest batter for 5 minutes.',
+        keyTechnique: 'A 5-minute rest allows buttermilk acid to activate leavening before hitting heat.'
+      },
+      {
+        stepNumber: 3,
+        title: 'Griddle Preheating & Ladling',
+        durationMinutes: 3,
+        durationLabel: '3 min',
+        description: 'Heat cast iron griddle over medium heat (180°C / 350°F). Brush lightly with a paper towel dipped in butter. Ladle 1/3-cup (80ml) pools of batter onto griddle, leaving 2 inches between cakes.',
+        keyTechnique: 'A light butter film browns evenly; pools of liquid butter cause blotchy scorching.'
+      },
+      {
+        stepNumber: 4,
+        title: 'The Surface Bubble Flip',
+        durationMinutes: 3,
+        durationLabel: '3 min',
+        description: 'Cook for 2.5 to 3 minutes until bubbles rise to the surface and start to pop, leaving tiny open holes that hold their shape. Slide spatula cleanly underneath and flip with a gentle wrist flick. Cook second side for 1.5 to 2 minutes until puffed and golden.',
+        keyTechnique: 'Flip only once; pressing down with a spatula crushes the air cells.'
+      },
+      {
+        stepNumber: 5,
+        title: 'Butter Crown & Warm Maple Finish',
+        durationMinutes: 2,
+        durationLabel: '2 min',
+        description: 'Transfer warm pancakes to a heated plate. Crown stack with a generous pat of salted cultured butter and drizzle with warm pure amber maple syrup. Serve immediately.',
+        keyTechnique: 'Warming maple syrup prevents chilling the hot pancake stack.'
+      }
+    ],
+    proTips: [
+      'Do not substitute regular milk plus vinegar if real cultured buttermilk is available; cultured buttermilk has a thicker viscosity that holds bubbles suspended.',
+      'Test your pan temperature with a single small test pancake before cooking the entire batch.',
+      'Keep finished pancakes warm on a wire rack set in a 95°C (200°F) oven while finishing the rest.'
+    ],
+    winePairing: {
+      beverage: 'Freshly Brewed Ethiopian Yirgacheffe Pour-Over or Cold Brew Coffee',
+      vintageOrRegion: 'Sidama, Ethiopia',
+      tastingNote: 'Floral jasmine aromatics and bergamot citrus notes cut through rich butter and maple sugar.'
+    },
+    nutrition: {
+      calories: 360,
+      protein: '9g',
+      carbs: '54g',
+      fat: '12g'
+    },
+    tags: ['Breakfast', 'Pancakes', 'Baking', 'Quick Meals', 'Comfort Food']
+  },
+  {
     slug: 'neapolitan-pizza-art',
     customPath: '/recipes/neapolitan-pizza-art',
     seoTitle: 'Neapolitan Pizza Recipe | Authentic Wood-Fired Crust',
@@ -424,8 +561,9 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     publishedDate: 'October 8, 2026',
     readTimeMinutes: 9,
-    heroImage: '/src/assets/images/neapolitan_pizza_1791770968429.jpg',
-    imageCaption: 'Fig. 1 — Blistered cornicione with fior di latte and fragrant sweet basil over a wood-fired hearth.',
+    heroImage: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80',
+    imageAlt: 'Artisanal Neapolitan pizza fresh from a wood-fired oven with blistered leopard crust, mozzarella, and fresh basil',
+    imageCaption: 'Fig. 4 — Blistered cornicione with fior di latte and fragrant sweet basil over a wood-fired hearth.',
     summary: 'Mastering true Pizza Napoletana requires understanding baker percentages, gluten network relaxation, and radiant thermal shock. Here is the definitive formula.',
     origin: 'Naples, Campania, Italy',
     difficulty: 'Intermediate',
@@ -529,8 +667,9 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     publishedDate: 'October 6, 2026',
     readTimeMinutes: 12,
-    heroImage: '/src/assets/images/tonkotsu_ramen_1791770980316.jpg',
-    imageCaption: 'Fig. 2 — Steaming Hakata tonkotsu bowl enriched with chashu pork belly, molten yolk ajitama, and scallions.',
+    heroImage: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80',
+    imageAlt: 'Steaming Hakata tonkotsu ramen bowl with rich pork broth, chashu pork belly slices, and molten egg',
+    imageCaption: 'Fig. 5 — Steaming Hakata tonkotsu bowl enriched with chashu pork belly, molten yolk ajitama, and scallions.',
     summary: 'The secret to Hakata tonkotsu is not simmering, but a violent, rolling boil that mechanical emulsifies marrow lipids into gelatinous broth water.',
     origin: 'Fukuoka (Hakata), Japan',
     difficulty: 'Masterclass',
@@ -636,8 +775,9 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     publishedDate: 'October 4, 2026',
     readTimeMinutes: 11,
-    heroImage: '/src/assets/images/oaxacan_mole_1791770996966.jpg',
-    imageCaption: 'Fig. 3 — Obsidian-hued mole negro served over pasture-raised chicken with toasted sesame and heirloom tortillas.',
+    heroImage: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=800&q=80',
+    imageAlt: 'Rich obsidian-hued Oaxacan mole negro plated with toasted sesame seeds and warm heirloom tortillas',
+    imageCaption: 'Fig. 6 — Obsidian-hued mole negro served over pasture-raised chicken with toasted sesame and heirloom tortillas.',
     summary: 'Mole Negro is not chocolate sauce; it is an epic symphonic composition of controlled ash, dried heritage chiles, seeds, spices, and dried fruits cooked in raw lard.',
     origin: 'Oaxaca de Juárez, Mexico',
     difficulty: 'Masterclass',
@@ -743,8 +883,9 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     publishedDate: 'October 3, 2026',
     readTimeMinutes: 10,
-    heroImage: '/src/assets/images/sourdough_boule_1791771011119.jpg',
-    imageCaption: 'Fig. 4 — High-hydration country boule with an open blistered ear and airy custard crumb.',
+    heroImage: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80',
+    imageAlt: 'Rustic artisanal sourdough boule with an open blistered ear and airy custard crumb',
+    imageCaption: 'Fig. 7 — High-hydration country boule with an open blistered ear and airy custard crumb.',
     summary: 'Achieving an open, glossy, honeycomb crumb is a masterclass in hydration balance, temperature control, and tension shaping.',
     origin: 'Provence, France',
     difficulty: 'Advanced',
@@ -846,8 +987,9 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     publishedDate: 'October 2, 2026',
     readTimeMinutes: 11,
-    heroImage: '/src/assets/images/hyderabadi_biryani_1791771042912.jpg',
-    imageCaption: 'Fig. 5 — Royal brass deg opened to reveal fragrant saffron-stained basmati and caramelized birista.',
+    heroImage: 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80',
+    imageAlt: 'Fragrant Hyderabadi dum biryani with long golden saffron basmati grains and fried onions',
+    imageCaption: 'Fig. 8 — Royal brass deg opened to reveal fragrant saffron-stained basmati and caramelized birista.',
     summary: 'Kacchi Biryani cooks raw spiced meat and partially boiled rice together inside a dough-sealed brass handi, relying solely on vaporized meat juices to cook every grain.',
     origin: 'Hyderabad, Telangana, India',
     difficulty: 'Masterclass',
@@ -953,8 +1095,9 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     publishedDate: 'October 1, 2026',
     readTimeMinutes: 7,
-    heroImage: '/src/assets/images/crispy_salmon_1791771055740.jpg',
-    imageCaption: 'Fig. 6 — Wild King Salmon fillet with crackling glass-like skin over charred tender asparagus and caper beurre noisette.',
+    heroImage: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80',
+    imageAlt: 'Crispy skin wild salmon fillet seared golden with charred tender asparagus and lemon herb butter',
+    imageCaption: 'Fig. 9 — Wild King Salmon fillet with crackling glass-like skin over charred tender asparagus and caper beurre noisette.',
     summary: 'The secret to restaurant-grade salmon is moisture elimination, continuous skin contact pressure, and gentle unilateral heat.',
     origin: 'West Coast, Sweden / Pacific Northwest',
     difficulty: 'Intermediate',
@@ -1058,8 +1201,9 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     publishedDate: 'September 28, 2026',
     readTimeMinutes: 8,
-    heroImage: '/src/assets/images/basque_cheesecake_1791771066528.jpg',
-    imageCaption: 'Fig. 7 — Slice of tarta de queso featuring deeply scorched amber top and lava-like creamy core.',
+    heroImage: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=800&q=80',
+    imageAlt: 'Caramelized slice of Basque burnt cheesecake with a rich and creamy custard center',
+    imageCaption: 'Fig. 10 — Slice of tarta de queso featuring deeply scorched amber top and lava-like creamy core.',
     summary: 'Originating from La Viña in San Sebastián, this cheesecake intentionally defies traditional water baths, baking at blisteringly high heat to create a caramelized shell and a soft, trembling center.',
     origin: 'San Sebastián, Basque Country, Spain',
     difficulty: 'Beginner',
@@ -1162,8 +1306,9 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     publishedDate: 'September 24, 2026',
     readTimeMinutes: 10,
-    heroImage: '/src/assets/images/vietnamese_pho_1791771080958.jpg',
-    imageCaption: 'Fig. 8 — Amber, crystal-clear Phở Bò broth laden with tender brisket, rice noodles, fresh Thai basil, and lime.',
+    heroImage: 'https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=80',
+    imageAlt: 'Steaming bowl of authentic Vietnamese Pho Bo beef noodle soup with fresh basil, chilies, and lime',
+    imageCaption: 'Fig. 11 — Amber, crystal-clear Phở Bò broth laden with tender brisket, rice noodles, fresh Thai basil, and lime.',
     summary: 'The heart of Vietnamese phở lies in an amber-tinted crystal broth perfumed with toasted warming spices and sweet rock sugar.',
     origin: 'Hanoi, Vietnam',
     difficulty: 'Advanced',
@@ -1270,8 +1415,9 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     publishedDate: 'September 20, 2026',
     readTimeMinutes: 8,
-    heroImage: '/src/assets/images/tagliatelle_tartufo_1791771126832.jpg',
-    imageCaption: 'Fig. 9 — Hand-cut egg tagliatelle tossed in glossy mountain butter and showered with black truffle flakes.',
+    heroImage: 'https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80',
+    imageAlt: 'Fresh handmade Italian golden egg tagliatelle tossed in butter emulsion with shaved black truffle',
+    imageCaption: 'Fig. 12 — Hand-cut egg tagliatelle tossed in glossy mountain butter and showered with black truffle flakes.',
     summary: 'True tagliatelle requires no machine extrusion—only a wooden mattarello, high-carotenoid farm egg yolks, and the gentle friction of untreated beechwood.',
     origin: 'Emilia-Romagna / Umbria, Italy',
     difficulty: 'Intermediate',
@@ -1374,8 +1520,9 @@ export const BLOG_POSTS: BlogPost[] = [
     },
     publishedDate: 'September 15, 2026',
     readTimeMinutes: 9,
-    heroImage: '/src/assets/images/mediterranean_mezze_1791771138089.jpg',
-    imageCaption: 'Fig. 10 — Sun-drenched terrace spread of charred baba ganoush, crisp herbed falafel, and whipped feta.',
+    heroImage: 'https://images.unsplash.com/photo-1541544741938-0af808871cc0?auto=format&fit=crop&w=800&q=80',
+    imageAlt: 'Abundant Mediterranean mezze platter with golden crispy falafel, smoky baba ganoush, whipped feta, and warm pita',
+    imageCaption: 'Fig. 13 — Sun-drenched terrace spread of charred baba ganoush, crisp herbed falafel, and whipped feta.',
     summary: 'Mezze is an expansive culinary philosophy of hospitality: contrasting temperatures, textures, smoke, and vibrant herbs designed for sharing.',
     origin: 'Eastern Mediterranean & Levant',
     difficulty: 'Intermediate',

@@ -19,6 +19,7 @@ export function parseCurrentRoute(): RouteMatch {
     if (slug === 'fluffy-omelette') slug = 'fluffy-cheese-omelette';
     if (slug === 'healthy-chicken-recipe') slug = 'healthy-chicken-dinner';
     if (slug === 'vegetarian-curry-recipe') slug = 'vegetarian-curry';
+    if (slug === 'pancakes' || slug === 'fluffy-pancakes') slug = 'fluffy-buttermilk-pancakes';
 
     return {
       pathname,
@@ -134,6 +135,9 @@ export function RouterProvider({ children }: { children: React.ReactNode }) {
       } else if (slug === 'vegetarian-curry' || slug === 'vegetarian-curry-recipe') {
         pageTitle = 'Vegetarian Curry Recipe | Easy Main Course';
         metaDesc = 'Cook this fragrant vegetarian coconut curry loaded with tender chickpeas, spinach, and warming spices. Follow our easy 25-minute guide to make dinner today!';
+      } else if (slug === 'fluffy-buttermilk-pancakes' || slug === 'pancakes' || slug === 'fluffy-pancakes') {
+        pageTitle = 'Fluffy Buttermilk Pancakes Recipe | Quick Breakfast Ideas';
+        metaDesc = 'Learn how to cook tall, golden, and ultra-fluffy buttermilk pancakes in 15 minutes. Follow our tested batter science and weekend morning cooking guide!';
       }
     } else if (route.route === 'recipes') {
       pageTitle = 'All Tested Homemade Recipes & Dinner Ideas | My Food Site';

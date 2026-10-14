@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Utensils } from 'lucide-react';
 
 interface ImageWithFallbackProps extends React.ImgHTMLAttributes<HTMLImageElement> {
@@ -19,12 +19,23 @@ export const ImageWithFallback: React.FC<ImageWithFallbackProps> = ({
 }) => {
   const [hasError, setHasError] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
+  const imgRef = useRef<HTMLImageElement>(null);
+
+  // If the browser already has the image cached in memory, immediately display it
+  useEffect(() => {
+    setHasError(false);
+    if (imgRef.current && imgRef.current.complete) {
+      if (imgRef.current.naturalWidth > 0) {
+        setIsLoaded(true);
+      }
+    }
+  }, [src]);
 
   return (
     <div className={`relative overflow-hidden bg-stone-200 ${containerClassName}`}>
       {!isLoaded && !hasError && (
-        <div className="absolute inset-0 bg-stone-200 animate-pulse flex items-center justify-center">
-          <Utensils className="w-6 h-6 text-stone-400" />
+        <div className="absolute inset-0 bg-stone-100 animate-pulse flex items-center justify-center">
+          <Utensils className="w-6 h-6 text-stone-300" />
         </div>
       )}
 
@@ -40,9 +51,11 @@ export const ImageWithFallback: React.FC<ImageWithFallbackProps> = ({
         </div>
       ) : (
         <img
+          ref={imgRef}
           src={src}
           alt={alt}
-          referrerPolicy="no-referrer"
+          loading="lazy"
+          decoding="async"
           onLoad={() => setIsLoaded(true)}
           onError={() => setHasError(true)}
           className={`w-full h-full object-cover transition-opacity duration-300 ${

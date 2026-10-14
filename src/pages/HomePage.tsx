@@ -419,7 +419,7 @@ const PostCard: React.FC<PostCardProps> = ({ post, isSaved, onToggleBookmark }) 
         <Link to={`/blog/${post.slug}`} className="block relative aspect-16/10 overflow-hidden bg-stone-100">
           <ImageWithFallback
             src={post.heroImage}
-            alt={post.title}
+            alt={post.imageAlt || post.title}
             fallbackTitle={post.title}
             className="group-hover:scale-104 transition-transform duration-500 object-cover"
             containerClassName="w-full h-full"

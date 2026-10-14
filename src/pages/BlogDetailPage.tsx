@@ -489,7 +489,7 @@ export const BlogDetailPage: React.FC<BlogDetailPageProps> = ({ slug }) => {
               <div className="aspect-16/10 overflow-hidden bg-stone-100">
                 <ImageWithFallback
                   src={rel.heroImage}
-                  alt={rel.title}
+                  alt={rel.imageAlt || rel.title}
                   fallbackTitle={rel.title}
                   className="group-hover:scale-104 transition-transform duration-500 object-cover"
                   containerClassName="w-full h-full"
