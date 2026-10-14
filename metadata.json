@@ -1,0 +1,6 @@
+{
+  "name": "L'Atelier Gourmand - Culinary Journal & Recipes",
+  "description": "An artisanal food publication and culinary journal featuring 10 deep-dive culinary stories, authentic recipes, interactive ingredient scaling, and distinct editorial pages.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
