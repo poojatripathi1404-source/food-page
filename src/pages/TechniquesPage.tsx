@@ -285,8 +285,8 @@ export const TechniquesPage: React.FC = () => {
               >
                 {/* Recipe Header Banner */}
                 <div className="border-b border-stone-200 bg-stone-50/70 p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
-                  <div className="flex items-center gap-4">
-                    <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden shrink-0 border border-stone-200 bg-stone-100">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                    <div className="w-24 h-24 sm:w-32 sm:h-24 md:w-36 md:h-28 rounded-xl overflow-hidden shrink-0 border border-stone-200 bg-stone-100 shadow-2xs">
                       <ImageWithFallback
                         src={item.heroImage}
                         alt={item.imageAlt}

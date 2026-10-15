@@ -32,3 +32,24 @@
   }
 }
 
+/* Image Alt Text Hover Overlay & Tooltip System */
+.image-alt-overlay-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-alt-tooltip {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 300ms cubic-bezier(0.16, 1, 0.3, 1), transform 300ms cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.image-alt-overlay-container:hover .image-alt-tooltip,
+.group:hover .image-alt-tooltip,
+.group\/img:hover .image-alt-tooltip,
+[data-has-alt]:hover .image-alt-tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}
+
